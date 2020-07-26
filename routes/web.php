@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Site root, which is the search results page.
+Route::get('/', 'SiteController@search')->name('search');
+
+// API for fetching search data.
+Route::prefix('api')->group(function() {
+    Route::get('/search', 'ApiController@search')->name('apiSearch');
 });

@@ -1,0 +1,13 @@
+body {
+    font-family: 'Nunito', Helvetica, Arial, sans-serif;
+}
+
+.search-result-thumbnail {
+    width: 320px;
+    float: left;
+}
+
+.search-result-details {
+    float: right;
+    width: calc(100% - 320px);
+}
