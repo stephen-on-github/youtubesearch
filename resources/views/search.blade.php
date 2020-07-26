@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container" id="app">
-        <div class="row mt-4">
+        <div class="row pt-4">
             <div class="col-sm-6">
                 {{-- Keyword input. Binded to the app's "keyword" member. Changing this will update search results. --}}
                 <label class="input-group mb-3">

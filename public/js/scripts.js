@@ -10,7 +10,7 @@ Vue.component('youtube-result', {
      */
     props: ['result'],
 
-    template: `<div class="search-result border clearfix my-3 d-flex">
+    template: `<div class="search-result border clearfix my-3 d-sm-flex">
             <div class="search-result-thumbnail text-center">
                 <a :href="result.url" tabindex="-1">
                     <img
@@ -28,7 +28,7 @@ Vue.component('youtube-result', {
 
                 <p>{{ result.description }}</p>
 
-                <a :href="result.url">{{ result.url }}</a>
+                <a :href="result.url" class="search-result-link">{{ result.url }}</a>
             </div>
         </div>`,
     data() {
